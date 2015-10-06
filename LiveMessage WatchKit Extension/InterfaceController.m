@@ -28,9 +28,30 @@
 
 - (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message {
     NSString* msg = [message objectForKey:@"message"];
-    [self presentAlertControllerWithTitle:@"Message" message:msg preferredStyle:WKAlertControllerStyleActionSheet actions:@[[WKAlertAction actionWithTitle:@"CLOSE" style:WKAlertActionStyleCancel handler:^{
+    
+    // Manière lisible de faire un AlertView
+    WKAlertAction* a1 = [WKAlertAction actionWithTitle:@"CLOSE" style:WKAlertActionStyleCancel handler:^{
         NSLog(@"CANCEL");
-    }]]];
+    }];
+    WKAlertAction* a2 = [WKAlertAction actionWithTitle:@"REPONDRE" style:WKAlertActionStyleDefault handler:^{
+        // ENVOI LE MESSAGE
+        if ([WCSession defaultSession].reachable) {
+            [[WCSession defaultSession]sendMessage:@{@"messageFromWatch" : @"Hello From Watch"} replyHandler:nil errorHandler:nil];
+        }
+        NSLog(@"REPONDRE");
+    }];
+    
+    NSArray* actions = @[a1, a2];
+    
+    // Manière compliqué de faire un AlertView
+//    NSArray* actions = @[[WKAlertAction actionWithTitle:@"CLOSE" style:WKAlertActionStyleCancel handler:^{
+//        NSLog(@"CANCEL");
+//    }],
+//    [WKAlertAction actionWithTitle:@"REPONDRE" style:WKAlertActionStyleDefault handler:^{
+//        NSLog(@"REPONDRE");
+//    }]];
+    
+    [self presentAlertControllerWithTitle:@"Message" message:msg preferredStyle:WKAlertControllerStyleActionSheet actions:actions];
 }
 
 - (void)willActivate {

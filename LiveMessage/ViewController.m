@@ -28,9 +28,23 @@
 }
 - (IBAction)onTouchSendMessage:(id)sender {
     if ([WCSession defaultSession].reachable) {
-        [[WCSession defaultSession]sendMessage:@{@"message" : @"Hello From iPhone"} replyHandler:nil errorHandler:nil];
+        [[WCSession defaultSession]sendMessage:@{@"messageFromIphone" : @"Hello From iPhone"} replyHandler:nil errorHandler:nil];
     }
 }
+
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message {
+    NSString* msg = [message objectForKey:@"messageFromWatch"];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        //AlertView
+    UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"Message" message:msg preferredStyle:UIAlertActionStyleDefault];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"CLOSE" style:UIAlertActionStyleCancel handler:nil]];
+
+    [self presentViewController:alertController animated:YES completion:nil];
+    });
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
