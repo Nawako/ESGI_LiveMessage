@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <WatchConnectivity/WatchConnectivity.h>
 
-@interface ViewController ()
+@interface ViewController () <WCSessionDelegate>
 
 @end
 
@@ -16,6 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if ([WCSession class] && [WCSession isSupported]) {
+        WCSession* session = [WCSession defaultSession];
+        session.delegate = self;
+        [session activateSession];
+    }
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

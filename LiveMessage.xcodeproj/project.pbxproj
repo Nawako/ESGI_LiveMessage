@@ -21,6 +21,7 @@
 		EC32BEFB1BC410E300FECCA2 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC32BEFA1BC410E300FECCA2 /* ExtensionDelegate.m */; };
 		EC32BEFE1BC410E300FECCA2 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC32BEFD1BC410E300FECCA2 /* NotificationController.m */; };
 		EC32BF001BC410E300FECCA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32BEFF1BC410E300FECCA2 /* Assets.xcassets */; };
+		EC32BF101BC410F200FECCA2 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32BF0F1BC410F200FECCA2 /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		EC32BEFD1BC410E300FECCA2 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		EC32BEFF1BC410E300FECCA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC32BF011BC410E300FECCA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC32BF0F1BC410F200FECCA2 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC32BF101BC410F200FECCA2 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +116,7 @@
 		EC32BEC01BC410E200FECCA2 = {
 			isa = PBXGroup;
 			children = (
+				EC32BF0F1BC410F200FECCA2 /* WatchConnectivity.framework */,
 				EC32BECB1BC410E200FECCA2 /* LiveMessage */,
 				EC32BEE41BC410E200FECCA2 /* LiveMessage WatchKit App */,
 				EC32BEF31BC410E300FECCA2 /* LiveMessage WatchKit Extension */,
