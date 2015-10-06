@@ -26,6 +26,11 @@
     
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)onTouchSendMessage:(id)sender {
+    if ([WCSession defaultSession].reachable) {
+        [[WCSession defaultSession]sendMessage:@{@"message" : @"Hello From iPhone"} replyHandler:nil errorHandler:nil];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
