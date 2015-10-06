@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC32BECE1BC410E200FECCA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC32BECD1BC410E200FECCA2 /* main.m */; };
+		EC32BED11BC410E200FECCA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC32BED01BC410E200FECCA2 /* AppDelegate.m */; };
+		EC32BED41BC410E200FECCA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC32BED31BC410E200FECCA2 /* ViewController.m */; };
+		EC32BED71BC410E200FECCA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC32BED51BC410E200FECCA2 /* Main.storyboard */; };
+		EC32BED91BC410E200FECCA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32BED81BC410E200FECCA2 /* Assets.xcassets */; };
+		EC32BEDC1BC410E200FECCA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC32BEDA1BC410E200FECCA2 /* LaunchScreen.storyboard */; };
+		EC32BEE11BC410E200FECCA2 /* LiveMessage WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC32BEE01BC410E200FECCA2 /* LiveMessage WatchKit App.app */; };
+		EC32BEE71BC410E200FECCA2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC32BEE51BC410E200FECCA2 /* Interface.storyboard */; };
+		EC32BEE91BC410E200FECCA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32BEE81BC410E200FECCA2 /* Assets.xcassets */; };
+		EC32BEF01BC410E300FECCA2 /* LiveMessage WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC32BEEF1BC410E300FECCA2 /* LiveMessage WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC32BEF81BC410E300FECCA2 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC32BEF71BC410E300FECCA2 /* InterfaceController.m */; };
+		EC32BEFB1BC410E300FECCA2 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC32BEFA1BC410E300FECCA2 /* ExtensionDelegate.m */; };
+		EC32BEFE1BC410E300FECCA2 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC32BEFD1BC410E300FECCA2 /* NotificationController.m */; };
+		EC32BF001BC410E300FECCA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC32BEFF1BC410E300FECCA2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC32BEE21BC410E200FECCA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC32BEC11BC410E200FECCA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC32BEDF1BC410E200FECCA2;
+			remoteInfo = "LiveMessage WatchKit App";
+		};
+		EC32BEF11BC410E300FECCA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC32BEC11BC410E200FECCA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC32BEEE1BC410E300FECCA2;
+			remoteInfo = "LiveMessage WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC32BF071BC410E300FECCA2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EC32BEF01BC410E300FECCA2 /* LiveMessage WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC32BF0B1BC410E300FECCA2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EC32BEE11BC410E200FECCA2 /* LiveMessage WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC32BEC91BC410E200FECCA2 /* LiveMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC32BECD1BC410E200FECCA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC32BECF1BC410E200FECCA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC32BED01BC410E200FECCA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC32BED21BC410E200FECCA2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC32BED31BC410E200FECCA2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC32BED61BC410E200FECCA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC32BED81BC410E200FECCA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC32BEDB1BC410E200FECCA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC32BEDD1BC410E200FECCA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC32BEE01BC410E200FECCA2 /* LiveMessage WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiveMessage WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC32BEE61BC410E200FECCA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EC32BEE81BC410E200FECCA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC32BEEA1BC410E200FECCA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC32BEEF1BC410E300FECCA2 /* LiveMessage WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LiveMessage WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC32BEF51BC410E300FECCA2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EC32BEF61BC410E300FECCA2 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		EC32BEF71BC410E300FECCA2 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		EC32BEF91BC410E300FECCA2 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		EC32BEFA1BC410E300FECCA2 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		EC32BEFC1BC410E300FECCA2 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		EC32BEFD1BC410E300FECCA2 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		EC32BEFF1BC410E300FECCA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC32BF011BC410E300FECCA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC32BEC61BC410E200FECCA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC32BEEC1BC410E300FECCA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC32BEC01BC410E200FECCA2 = {
+			isa = PBXGroup;
+			children = (
+				EC32BECB1BC410E200FECCA2 /* LiveMessage */,
+				EC32BEE41BC410E200FECCA2 /* LiveMessage WatchKit App */,
+				EC32BEF31BC410E300FECCA2 /* LiveMessage WatchKit Extension */,
+				EC32BECA1BC410E200FECCA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC32BECA1BC410E200FECCA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC32BEC91BC410E200FECCA2 /* LiveMessage.app */,
+				EC32BEE01BC410E200FECCA2 /* LiveMessage WatchKit App.app */,
+				EC32BEEF1BC410E300FECCA2 /* LiveMessage WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC32BECB1BC410E200FECCA2 /* LiveMessage */ = {
+			isa = PBXGroup;
+			children = (
+				EC32BECF1BC410E200FECCA2 /* AppDelegate.h */,
+				EC32BED01BC410E200FECCA2 /* AppDelegate.m */,
+				EC32BED21BC410E200FECCA2 /* ViewController.h */,
+				EC32BED31BC410E200FECCA2 /* ViewController.m */,
+				EC32BED51BC410E200FECCA2 /* Main.storyboard */,
+				EC32BED81BC410E200FECCA2 /* Assets.xcassets */,
+				EC32BEDA1BC410E200FECCA2 /* LaunchScreen.storyboard */,
+				EC32BEDD1BC410E200FECCA2 /* Info.plist */,
+				EC32BECC1BC410E200FECCA2 /* Supporting Files */,
+			);
+			path = LiveMessage;
+			sourceTree = "<group>";
+		};
+		EC32BECC1BC410E200FECCA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC32BECD1BC410E200FECCA2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC32BEE41BC410E200FECCA2 /* LiveMessage WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EC32BEE51BC410E200FECCA2 /* Interface.storyboard */,
+				EC32BEE81BC410E200FECCA2 /* Assets.xcassets */,
+				EC32BEEA1BC410E200FECCA2 /* Info.plist */,
+			);
+			path = "LiveMessage WatchKit App";
+			sourceTree = "<group>";
+		};
+		EC32BEF31BC410E300FECCA2 /* LiveMessage WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC32BEF61BC410E300FECCA2 /* InterfaceController.h */,
+				EC32BEF71BC410E300FECCA2 /* InterfaceController.m */,
+				EC32BEF91BC410E300FECCA2 /* ExtensionDelegate.h */,
+				EC32BEFA1BC410E300FECCA2 /* ExtensionDelegate.m */,
+				EC32BEFC1BC410E300FECCA2 /* NotificationController.h */,
+				EC32BEFD1BC410E300FECCA2 /* NotificationController.m */,
+				EC32BEFF1BC410E300FECCA2 /* Assets.xcassets */,
+				EC32BF011BC410E300FECCA2 /* Info.plist */,
+				EC32BEF41BC410E300FECCA2 /* Supporting Files */,
+			);
+			path = "LiveMessage WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EC32BEF41BC410E300FECCA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC32BEF51BC410E300FECCA2 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC32BEC81BC410E200FECCA2 /* LiveMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC32BF0C1BC410E300FECCA2 /* Build configuration list for PBXNativeTarget "LiveMessage" */;
+			buildPhases = (
+				EC32BEC51BC410E200FECCA2 /* Sources */,
+				EC32BEC61BC410E200FECCA2 /* Frameworks */,
+				EC32BEC71BC410E200FECCA2 /* Resources */,
+				EC32BF0B1BC410E300FECCA2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC32BEE31BC410E200FECCA2 /* PBXTargetDependency */,
+			);
+			name = LiveMessage;
+			productName = LiveMessage;
+			productReference = EC32BEC91BC410E200FECCA2 /* LiveMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC32BEDF1BC410E200FECCA2 /* LiveMessage WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC32BF081BC410E300FECCA2 /* Build configuration list for PBXNativeTarget "LiveMessage WatchKit App" */;
+			buildPhases = (
+				EC32BEDE1BC410E200FECCA2 /* Resources */,
+				EC32BF071BC410E300FECCA2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC32BEF21BC410E300FECCA2 /* PBXTargetDependency */,
+			);
+			name = "LiveMessage WatchKit App";
+			productName = "LiveMessage WatchKit App";
+			productReference = EC32BEE01BC410E200FECCA2 /* LiveMessage WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EC32BEEE1BC410E300FECCA2 /* LiveMessage WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC32BF041BC410E300FECCA2 /* Build configuration list for PBXNativeTarget "LiveMessage WatchKit Extension" */;
+			buildPhases = (
+				EC32BEEB1BC410E300FECCA2 /* Sources */,
+				EC32BEEC1BC410E300FECCA2 /* Frameworks */,
+				EC32BEED1BC410E300FECCA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiveMessage WatchKit Extension";
+			productName = "LiveMessage WatchKit Extension";
+			productReference = EC32BEEF1BC410E300FECCA2 /* LiveMessage WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC32BEC11BC410E200FECCA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Etudiant;
+				TargetAttributes = {
+					EC32BEC81BC410E200FECCA2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EC32BEDF1BC410E200FECCA2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EC32BEEE1BC410E300FECCA2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = EC32BEC41BC410E200FECCA2 /* Build configuration list for PBXProject "LiveMessage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC32BEC01BC410E200FECCA2;
+			productRefGroup = EC32BECA1BC410E200FECCA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC32BEC81BC410E200FECCA2 /* LiveMessage */,
+				EC32BEDF1BC410E200FECCA2 /* LiveMessage WatchKit App */,
+				EC32BEEE1BC410E300FECCA2 /* LiveMessage WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC32BEC71BC410E200FECCA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC32BEDC1BC410E200FECCA2 /* LaunchScreen.storyboard in Resources */,
+				EC32BED91BC410E200FECCA2 /* Assets.xcassets in Resources */,
+				EC32BED71BC410E200FECCA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC32BEDE1BC410E200FECCA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC32BEE91BC410E200FECCA2 /* Assets.xcassets in Resources */,
+				EC32BEE71BC410E200FECCA2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC32BEED1BC410E300FECCA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC32BF001BC410E300FECCA2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC32BEC51BC410E200FECCA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC32BED41BC410E200FECCA2 /* ViewController.m in Sources */,
+				EC32BED11BC410E200FECCA2 /* AppDelegate.m in Sources */,
+				EC32BECE1BC410E200FECCA2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC32BEEB1BC410E300FECCA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC32BEFB1BC410E300FECCA2 /* ExtensionDelegate.m in Sources */,
+				EC32BEF81BC410E300FECCA2 /* InterfaceController.m in Sources */,
+				EC32BEFE1BC410E300FECCA2 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC32BEE31BC410E200FECCA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC32BEDF1BC410E200FECCA2 /* LiveMessage WatchKit App */;
+			targetProxy = EC32BEE21BC410E200FECCA2 /* PBXContainerItemProxy */;
+		};
+		EC32BEF21BC410E300FECCA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC32BEEE1BC410E300FECCA2 /* LiveMessage WatchKit Extension */;
+			targetProxy = EC32BEF11BC410E300FECCA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC32BED51BC410E200FECCA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC32BED61BC410E200FECCA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC32BEDA1BC410E200FECCA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC32BEDB1BC410E200FECCA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EC32BEE51BC410E200FECCA2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC32BEE61BC410E200FECCA2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC32BF021BC410E300FECCA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC32BF031BC410E300FECCA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC32BF051BC410E300FECCA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LiveMessage WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kilomobi.LiveMessage.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		EC32BF061BC410E300FECCA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LiveMessage WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kilomobi.LiveMessage.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		EC32BF091BC410E300FECCA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = LiveMessage_WatchKit_Extension;
+				INFOPLIST_FILE = "LiveMessage WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kilomobi.LiveMessage.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		EC32BF0A1BC410E300FECCA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = LiveMessage_WatchKit_Extension;
+				INFOPLIST_FILE = "LiveMessage WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kilomobi.LiveMessage.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		EC32BF0D1BC410E300FECCA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiveMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kilomobi.LiveMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC32BF0E1BC410E300FECCA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiveMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kilomobi.LiveMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC32BEC41BC410E200FECCA2 /* Build configuration list for PBXProject "LiveMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC32BF021BC410E300FECCA2 /* Debug */,
+				EC32BF031BC410E300FECCA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC32BF041BC410E300FECCA2 /* Build configuration list for PBXNativeTarget "LiveMessage WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC32BF051BC410E300FECCA2 /* Debug */,
+				EC32BF061BC410E300FECCA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC32BF081BC410E300FECCA2 /* Build configuration list for PBXNativeTarget "LiveMessage WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC32BF091BC410E300FECCA2 /* Debug */,
+				EC32BF0A1BC410E300FECCA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC32BF0C1BC410E300FECCA2 /* Build configuration list for PBXNativeTarget "LiveMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC32BF0D1BC410E300FECCA2 /* Debug */,
+				EC32BF0E1BC410E300FECCA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC32BEC11BC410E200FECCA2 /* Project object */;
+}
